@@ -1,8 +1,6 @@
 import React from 'react';
 import Nav from './Nav/index';
-import Canvas from './Canvas/index';
 import styled from 'styled-components';
-import Toggle from './Toggle/index';
 import Main from './Main/index';
 import {Switch, Route} from 'react-router-dom';
 import About from './About/index';
@@ -15,12 +13,6 @@ const Wrapper = styled.div`
     grid-template-rows: 3;
     height: 100%;
 `;
-const Body = styled.div`
-    height: 100vh;
-    background: linear-gradient(to right, black, black, black, red, yellow);
-`;
-
-
 
 function App(props) {
     return (
