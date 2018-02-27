@@ -5,7 +5,8 @@ import Me from '../images/me.JPG';
 
 const Wrapper = styled.section`
     display: grid;
-    background: rgb(135, 97, 67);
+    color: white;
+    background: rgba(135, 97, 67, 0.5);
     height: 100vh;
     grid-template-columns: 60px 1fr
     grid-template-rows: auto ;

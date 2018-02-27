@@ -14,16 +14,14 @@ const Videocont = styled.div`
     z-index: -1;
 `
 const Video = styled.video`
-    
     overflow-y: scroll;
-    
     width: 100%;
     
 `
 const Overlay = styled.div`
     display: grid;
     height: 100vh;
-    color: black;
+    color: white;
     
     
 `
