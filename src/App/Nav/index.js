@@ -1,18 +1,22 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const SNav = styled.div`
     display: grid;
+    position: absolute;
+    height: 50;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    background: gray;
-    height: 60px;
+    backgroundColor: transparent;
+    border: none;
     width: 100vw;
+    height: 60px;
+    
 `
 const StyledLink = styled(Link)`
-    color: black;
+    color: white;
     text-decoration: none;
     justify-self: center;
     align-items: center;
@@ -29,9 +33,9 @@ const StyledLink = styled(Link)`
 function Nav(props) {
     return (
         <SNav>
-            <StyledLink to='/'>Home</StyledLink>
-            <StyledLink to='/about'>About</StyledLink>
-            <StyledLink to='/contact'>Contact</StyledLink>
+            <StyledLink smooth='true' to='/#home'>Home</StyledLink>
+            <StyledLink smooth='true' to='/#about'>About</StyledLink>
+            <StyledLink smooth='true' to='/#contact'>Contact</StyledLink>
         </SNav>
     )
 }

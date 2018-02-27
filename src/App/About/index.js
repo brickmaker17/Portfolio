@@ -1,13 +1,36 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import Nav from '../Nav/index';
+import styled from 'styled-components';
+import Me from '../images/me.JPG';
 
-function About(props){
-    return(
-        <div>
-            <h1>About Me</h1>
-            <img src="" alt="Pic of me"/>
-        </div>
+
+const Wrapper = styled.section`
+    display: grid;
+    background: rgb(135, 97, 67);
+    height: 100vh;
+    grid-template-columns: 60px 1fr
+    grid-template-rows: auto ;
+    grid-template-areas:
+        'm c'
+    
+`
+const Main = styled.div`
+    grid-area: m;
+    margin-top: 60px;
+`
+const Image = styled.img`
+    border-radius: 50%;
+    height: 200px;
+    
+`
+
+function About(props) {
+    return (
+        <Wrapper id="about">
+            <Main>
+                <h1>About Me</h1>
+                <Image src={Me} alt="Pic of me" />
+            </Main>
+        </Wrapper>
     )
 }
 export default About;

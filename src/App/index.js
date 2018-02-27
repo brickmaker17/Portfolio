@@ -10,8 +10,10 @@ import '../styles/app.css';
 
 const Wrapper = styled.div`
     display: grid;
-    grid-template-rows: 3;
-    height: 100%;
+    grid-template-rows: 1;
+    overflow: scroll;
+    height: 100vh;
+    
 `;
 
 function App(props) {
@@ -19,10 +21,12 @@ function App(props) {
         <Wrapper>
             <Nav/>
             <Switch>
+                <Route path='/' component={Main} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
-                <Route path='/' component={Main} />
             </Switch>
+            <About/>
+            <Contact/>
         </Wrapper>
     )
 }

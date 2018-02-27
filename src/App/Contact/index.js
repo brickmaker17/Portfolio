@@ -1,12 +1,17 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import Nav from '../Nav/index';
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+    height: 100vh;
+    background: green;
+`
+
 
 function Contact(props){
     return(
-        <div>
+        <Wrapper id='contact'>
             <h1>Contact</h1>
-        </div>
+        </Wrapper>
     )
 }
 export default Contact;
