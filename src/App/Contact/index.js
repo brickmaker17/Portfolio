@@ -16,7 +16,26 @@ const Main = styled.div`
 `
 const Form = styled.form`
     display: grid;
-    width: 200px;
+    grid-row-gap: 4px;
+    border: none;
+    width: 350px;
+`
+const Cont = styled.h1`
+    font-size: 3vw;
+`
+const But = styled.button`
+    margin-top: 5px;
+    width: 60px;
+`
+const StyledInput = styled.input`
+    height: 28px;
+    width: 100%;
+`
+const SubHead = styled.h4`
+    margin: 10px;
+`
+const TextBox = styled.textarea`
+    height: 100px;
 `
 
 function Contact(props) {
@@ -24,12 +43,13 @@ function Contact(props) {
         <Wrapper id='contact'>
             <Content>
                 <Main>
-                <h1>Contact</h1>
+                <Cont>Contact</Cont>
+                <SubHead>Have a questions or want to work together?</SubHead>
                 <Form action="">
-                    <input placeholder="Name" type="text" />
-                    <input placeholder="Email" type="text" />
-                    <input placeholder="Question..." type="text" />
-                    <button>Submit</button>
+                    <StyledInput placeholder="Name" type="text" />
+                    <StyledInput placeholder="Email" type="text" />
+                    <TextBox placeholder="Your Message" type="text" />
+                    <But>Submit</But>
                 </Form>
                 <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
                 </Main>
