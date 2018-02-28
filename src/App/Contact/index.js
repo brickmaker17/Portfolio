@@ -45,11 +45,12 @@ function Contact(props) {
                 <Main>
                 <Cont>Contact</Cont>
                 <SubHead>Have a questions or want to work together?</SubHead>
-                <Form name="contact" method="POST" netlify>
+                <Form name="contact" netlify netlify-honeypot="bot-field" hidden>
+                    <StyledInput name="form-name" value="contact" placeholder="Name" type="hidden" />
                     <StyledInput name="name" placeholder="Name" type="text" />
                     <StyledInput name="email" placeholder="Email" type="text" />
                     <TextBox name="message" placeholder="Your Message" type="text" />
-                    <But type="submit">Submit</But>
+                    <But type="submit">Send</But>
                 </Form>
                 <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
                 </Main>
