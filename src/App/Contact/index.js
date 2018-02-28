@@ -43,16 +43,24 @@ function Contact(props) {
         <Wrapper id='contact'>
             <Content>
                 <Main>
-                <Cont>Contact</Cont>
-                <SubHead>Have a questions or want to work together?</SubHead>
-                <Form method="post">
-                    <StyledInput type="hidden" name="form-name" value="contact" placeholder="Name" />
-                    <StyledInput type="text" name="name" placeholder="Name"  />
-                    <StyledInput name="email" placeholder="Email" type="text" />
-                    <TextBox name="message" placeholder="Your Message" type="text" />
-                    <But type="submit">Send</But>
-                </Form>
-                <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
+                    <Cont>Contact</Cont>
+                    <SubHead>Have a questions or want to work together?</SubHead>
+                    <form method="post">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p>
+                            <label>Your Name: <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <label>Message: <textarea name="message"></textarea></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+                    <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
                 </Main>
             </Content>
         </Wrapper>
