@@ -48,13 +48,13 @@ function Contact(props) {
                     <Form method="post">
                         <input type="hidden" name="form-name" value="contact" />
                         <p>
-                            <label>Your Name: <input type="text" name="name" /></label>
+                            <input type="text" name="name" placeholder="Name" />
                         </p>
                         <p>
-                            <label>Your Email: <input type="email" name="email" /></label>
+                            <input type="email" name="email" placeholder="Enter email" />
                         </p>
                         <p>
-                            <label>Message: <TextBox name="message"></TextBox></label>
+                            <TextBox name="message" placeholder="Your Message"></TextBox>
                         </p>
                         <p>
                             <button type="submit">Send</button>
