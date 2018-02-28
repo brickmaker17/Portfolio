@@ -45,7 +45,7 @@ function Contact(props) {
                 <Main>
                     <Cont>Contact</Cont>
                     <SubHead>Have a questions or want to work together?</SubHead>
-                    <form method="post">
+                    <Form method="post">
                         <input type="hidden" name="form-name" value="contact" />
                         <p>
                             <label>Your Name: <input type="text" name="name" /></label>
@@ -59,7 +59,7 @@ function Contact(props) {
                         <p>
                             <button type="submit">Send</button>
                         </p>
-                    </form>
+                    </Form>
                     <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
                 </Main>
             </Content>
