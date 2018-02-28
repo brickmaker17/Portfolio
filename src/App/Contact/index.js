@@ -54,7 +54,7 @@ function Contact(props) {
                             <label>Your Email: <input type="email" name="email" /></label>
                         </p>
                         <p>
-                            <label>Message: <Texbox name="message"></Texbox></label>
+                            <label>Message: <Textbox name="message"></Textbox></label>
                         </p>
                         <p>
                             <button type="submit">Send</button>
