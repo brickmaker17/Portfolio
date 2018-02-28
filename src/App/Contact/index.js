@@ -36,6 +36,7 @@ const SubHead = styled.h4`
 `
 const TextBox = styled.textarea`
     height: 100px;
+    width: 100%;
 `
 
 function Contact(props) {
@@ -48,16 +49,16 @@ function Contact(props) {
                     <Form method="post">
                         <input type="hidden" name="form-name" value="contact" />
                         <p>
-                            <input type="text" name="name" placeholder="Name" />
+                            <StyledInput type="text" name="name" placeholder="Name" />
                         </p>
                         <p>
-                            <input type="email" name="email" placeholder="Enter email" />
+                            <StyledInput type="email" name="email" placeholder="Enter email" />
                         </p>
                         <p>
                             <TextBox name="message" placeholder="Your Message"></TextBox>
                         </p>
                         <p>
-                            <button type="submit">Send</button>
+                            <But type="submit">Send</But>
                         </p>
                     </Form>
                     <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
