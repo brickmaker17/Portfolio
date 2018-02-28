@@ -45,9 +45,9 @@ function Contact(props) {
                 <Main>
                 <Cont>Contact</Cont>
                 <SubHead>Have a questions or want to work together?</SubHead>
-                <Form name="contact" netlify netlify-honeypot="bot-field" hidden>
-                    <StyledInput name="form-name" value="contact" placeholder="Name" type="hidden" />
-                    <StyledInput name="name" placeholder="Name" type="text" />
+                <Form method="post">
+                    <StyledInput type="hidden" name="form-name" value="contact" placeholder="Name" />
+                    <StyledInput type="text" name="name" placeholder="Name"  />
                     <StyledInput name="email" placeholder="Email" type="text" />
                     <TextBox name="message" placeholder="Your Message" type="text" />
                     <But type="submit">Send</But>
