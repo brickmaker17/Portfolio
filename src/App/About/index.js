@@ -41,7 +41,6 @@ function About(props) {
                 <Image src={Me} alt="Pic of me" />
             </Main>
             <Content>
-                test
                 <Projects />
             </Content>
         </Wrapper>
