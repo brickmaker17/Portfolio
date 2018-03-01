@@ -6,11 +6,13 @@ import Full from '../images/fullstack.png';
 
 const Project = styled.div`
     display: flex;
-    width: 1000px;
+    width: 70vw;
+    
 `
 const Link = styled.div`
     display: grid;
     grid-template-rows: auto 30px 30px;
+    margin-left: 20px;
 `
 
 function Projects() {
@@ -19,19 +21,26 @@ function Projects() {
             <Project>
                 <img src={Local} alt="Pic of frontend website" />
                 <Link>
-                <p>This was a HTML & CSS site built in visual studio. The most challanging part of building this was linking to the diffrent pages.
-                    The best part of building this was the styling.
-                </p>
-                <form>
-                    <button formAction="https://confident-mestorf-46653c.netlify.com/">Site</button>
-                </form>
-                <form>
-                    <button formAction="https://github.com/brickmaker17/business-time">Github</button>
-                </form>
+                    <p>This is built with HTML & CSS using visual studio code. The most challanging part of building this was linking to the diffrent pages.
+                        The best part of building this was the styling.</p>
+                    <form>
+                        <button formAction="https://confident-mestorf-46653c.netlify.com/">Site</button>
+                    </form>
+                    <form>
+                        <button formAction="https://github.com/brickmaker17/business-time">Github</button>
+                    </form>
                 </Link>
             </Project>
             <br />
-            <img src={Workout} alt="Pic of group full stack project" />
+            <Project>
+                <img src={Workout} alt="Pic of group full stack project" />
+                <Link>
+                    <p>This is built with reactjs, readux, javascript, HTML & CSS. This was a group project that used github.</p>
+                    <form>
+                        <button formAction="">Github</button>
+                    </form>
+                </Link>
+            </Project>
             <br />
             <img src={Full} alt="Pic of full stack personal project" />
         </div>
