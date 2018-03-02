@@ -47,6 +47,9 @@ function Projects() {
                 <Link>
                     <p>This if a fully C.R.U.D. personal project built with reactjs.</p>
                     <form>
+                        <button formAction="https://suspicious-heyrovsky-bc9347.netlify.com/">Site</button>
+                    </form>
+                    <form>
                         <button formAction="https://github.com/brickmaker17/local-evenings">Github</button>
                     </form>
                 </Link>
