@@ -42,7 +42,15 @@ function Projects() {
                 </Link>
             </Project>
             <br />
-            <img src={Full} alt="Pic of full stack personal project" />
+            <Project>
+                <img src={Full} alt="Pic of full stack personal project" />
+                <Link>
+                    <p>This if a fully C.R.U.D. personal project built with reactjs.</p>
+                    <form>
+                        <button formAction="https://github.com/brickmaker17/local-evenings">Github</button>
+                    </form>
+                </Link>
+            </Project>
         </div>
     )
 }

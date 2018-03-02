@@ -59,7 +59,6 @@ function Main() {
                     </Title>
                 </Overlay>
             </div>
-            
         </Grid>
     )
 }
