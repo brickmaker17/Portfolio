@@ -14,8 +14,12 @@ const Videocont = styled.div`
     z-index: -1;
 `
 const Video = styled.video`
-    overflow-y: scroll;
-    width: 100%;
+    width: 100vw;
+    @media (max-width: 1686px){
+        
+        width: 1686px;
+    }
+    
     
 `
 const Overlay = styled.div`
