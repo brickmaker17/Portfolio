@@ -1,8 +1,8 @@
 import React from 'react';
-import Nav from './Nav/index';
+import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
+import Nav from './Nav/index';
 import Main from './Main/index';
-import {Switch, Route} from 'react-router-dom';
 import About from './About/index';
 import Contact from './Contact/index';
 import '../styles/app.css';
@@ -16,19 +16,19 @@ const Wrapper = styled.div`
     
 `;
 
-function App(props) {
+function App() {
     return (
         <Wrapper>
-            <Nav/>
+            <Nav />
             <Switch>
-                <Route path='/' component={Main} />
-                <Route path='/about' component={About} />
-                <Route path='/contact' component={Contact} />
+                <Route path="/" component={Main} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
             </Switch>
-            <About/>
-            <Contact/>
+            <About />
+            <Contact />
         </Wrapper>
-    )
+    );
 }
 
 export default App;

@@ -14,36 +14,35 @@ const Wrapper = styled.section`
     grid-template-areas:
         'm c'
     
-`
+`;
 const Main = styled.div`
     grid-area: m;
     margin-left: 20px;
     margin-top: 60px;
-`
+`;
 const Image = styled.img`
     border-radius: 50%;
     height: 200px;
     
-`
+`;
 const Content = styled.div`
     margin-top: 60px;
     margin-left: 20px;
     grid-area: c;
-`
+`;
 
-function About(props) {
+function About() {
     return (
         <Wrapper id="about">
             <Main>
                 <h1>About Me</h1>
-                <p>I am a VSchool Graduate who learned the Mern Stack. While in school I have expanded my learning and studdied Styled-Components. 
-                    My passion for Web Development comes from the challange and reward that it brings when you are able to overcome the problomes that are presented.</p>
+                <p>I am a VSchool Graduate who learned the Mern Stack. While in school I have expanded my learning and studdied Styled-Components. My passion for Web Development comes from the challange and reward that it brings when you are able to overcome the problomes that are presented.</p>
                 <Image src={Me} alt="Pic of me" />
             </Main>
             <Content>
                 <Projects />
             </Content>
         </Wrapper>
-    )
+    );
 }
 export default About;
