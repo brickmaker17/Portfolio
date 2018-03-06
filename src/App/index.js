@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Nav from './Nav/index';
 import Main from './Main/index';
 import About from './About/index';
-import Contact from './Contact/index';
+import Projects from './Projects/index';
 import '../styles/app.css';
 
 
@@ -23,10 +23,10 @@ function App() {
             <Switch>
                 <Route path="/" component={Main} />
                 <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/contact" component={Projects} />
             </Switch>
+            <Projects />
             <About />
-            <Contact />
         </Wrapper>
     );
 }

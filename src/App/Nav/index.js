@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -14,7 +14,7 @@ const SNav = styled.div`
     width: 100vw;
     height: 60px;
     
-`
+`;
 const StyledLink = styled(Link)`
     color: white;
     text-decoration: none;
@@ -25,19 +25,17 @@ const StyledLink = styled(Link)`
         background-color: #555;
         color: white;
     }
-`   
+`;
 
 
-
-
-function Nav(props) {
+function Nav() {
     return (
         <SNav>
-            <StyledLink smooth='true' to='/#home'>Home</StyledLink>
-            <StyledLink smooth='true' to='/#about'>About</StyledLink>
-            <StyledLink smooth='true' to='/#contact'>Contact</StyledLink>
+            <StyledLink smooth="true" to="/#home">Home</StyledLink>
+            <StyledLink smooth="true" to="/#about">About</StyledLink>
+            <StyledLink smooth="true" to="/#projects">Projects</StyledLink>
         </SNav>
-    )
+    );
 }
 
 export default Nav;

@@ -4,20 +4,29 @@ import Local from '../images/localEvenings.png';
 import Workout from '../images/workout.png';
 import Full from '../images/fullstack.png';
 
+const Wrapper = styled.section`
+    height: 100vh;
+    color: white;
+    background: rgba(49, 49, 48, 0.5);
+`;
 const Project = styled.div`
     display: flex;
-    width: 70vw;
-    
+    padding-top: 30px;
+    width: 70vw; 
 `;
 const Link = styled.div`
     display: grid;
     grid-template-rows: auto 30px 30px;
     margin-left: 20px;
 `;
+const Heading = styled.h1`
+    margin-top: 20px;
+`;
 
 function Projects() {
     return (
-        <div>
+        <Wrapper id="projects">
+            <Heading>Projects</Heading>
             <Project>
                 <img src={Local} alt="Pic of frontend website" />
                 <Link>
@@ -30,7 +39,6 @@ function Projects() {
                     </form>
                 </Link>
             </Project>
-            <br />
             <Project>
                 <img src={Workout} alt="Pic of group full stack project" />
                 <Link>
@@ -40,7 +48,6 @@ function Projects() {
                     </form>
                 </Link>
             </Project>
-            <br />
             <Project>
                 <img src={Full} alt="Pic of full stack personal project" />
                 <Link>
@@ -53,7 +60,7 @@ function Projects() {
                     </form>
                 </Link>
             </Project>
-        </div>
+        </Wrapper>
     );
 }
 
