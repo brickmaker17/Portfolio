@@ -17,6 +17,7 @@ const SNav = styled.div`
 `;
 const StyledLink = styled(Link)`
     color: white;
+    font-size: 30px;
     text-decoration: none;
     justify-self: center;
     align-items: center;

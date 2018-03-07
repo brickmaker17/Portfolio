@@ -13,17 +13,16 @@ const Videocont = styled.div`
     z-index: -1;
 `;
 const Video = styled.video`
-    width: 100vw;
+width: 100vw;
     @media (max-width: 1686px){
         width: 1686px;
     }
-    
 `;
 const Overlay = styled.div`
     display: grid;
     height: 100vh;
+    width: 100vw;
     color: white;
-    
 `;
 const Title = styled.div`
     grid-column: 2 / 3;
@@ -36,6 +35,7 @@ const Name = styled.h1`
 const Subtitle = styled.h3`
     font-size: 4vw;
     text-align: center;
+   
 `;
 const Grid = styled.div`
     display: grid;

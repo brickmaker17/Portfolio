@@ -8,16 +8,24 @@ const Wrapper = styled.section`
     color: white;
     background: rgba(135, 97, 67, 0.5);
     height: 100vh;
-    grid-template-columns: 25% 1fr;
-    grid-template-rows: auto ;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    @media (max-width: 414px){
+        grid-template-areas:
+        'm'
+        'c'
+    }
     grid-template-areas:
         'm c'
-    
 `;
 const Main = styled.div`
     grid-area: m;
     margin-left: 20px;
     margin-top: 60px;
+    @media (max-width: 414px){
+        height: 200px;
+    }
 `;
 const Image = styled.img`
     border-radius: 50%;
@@ -25,9 +33,9 @@ const Image = styled.img`
     
 `;
 const Content = styled.div`
+    grid-area: c;
     margin-top: 60px;
     margin-left: 20px;
-    grid-area: c;
 `;
 const Form = styled.form`
     display: grid;
@@ -64,7 +72,7 @@ function About() {
                 <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
             </Main>
             <Content>
-                <Main>
+                <div>
                     <Cont>Contact</Cont>
                     <SubHead>Have a questions or want to work together?</SubHead>
                     <Form method="post">
@@ -82,7 +90,7 @@ function About() {
                             <But type="submit">Send</But>
                         </p>
                     </Form>
-                </Main>
+                </div>
             </Content>
         </Wrapper>
     );
