@@ -21,8 +21,9 @@ const Wrapper = styled.section`
 `;
 const Main = styled.div`
     grid-area: m;
+    align-self: center;
     margin-left: 20px;
-    margin-top: 60px;
+   
     @media (max-width: 414px){
         height: 200px;
     }
@@ -34,7 +35,7 @@ const Image = styled.img`
 `;
 const Content = styled.div`
     grid-area: c;
-    margin-top: 60px;
+    align-self: center;
     margin-left: 20px;
 `;
 const Form = styled.form`
@@ -67,7 +68,7 @@ function About() {
         <Wrapper id="about">
             <Main>
                 <h1>About Me</h1>
-                <p>I am a VSchool Graduate who learned the Mern Stack. While in school I have expanded my learning and studdied Styled-Components. My passion for Web Development comes from the challange and reward that it brings when you are able to overcome the problomes that are presented.</p>
+                <p>I am a VSchool Graduate who learned the Mern Stack. While in school I have expanded my learning and studied Styled-Components. My passion for Web Development comes from the challenge and reward that it brings when you are able to overcome the problems that are presented.</p>
                 <Image src={Me} alt="Pic of me" />
                 <a href="https://www.linkedin.com/in/lukebarrett1/">LinkedIn</a>
             </Main>
