@@ -64,7 +64,7 @@ function Projects() {
                     <h1>Fit</h1>
                     <h5>HTML, CSS, JAVASCRIPT, REACT and REDUX</h5>
                     <p>This is built with reactjs, readux, javascript, HTML & CSS. This was a group project that used github.</p>
-                    <Tag role="button" href="">Git</Tag>
+                    <Tag role="button" href="https://github.com/celesterobinson/fit">Git</Tag>
                 </Link>
             </Project>
             <Project>
