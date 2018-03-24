@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Me from '../images/me.JPG';
+import Recaptcha from 'react-recaptcha';
 
 
 const Wrapper = styled.section`
@@ -90,6 +91,7 @@ function About() {
                         <p>
                             <But type="submit">Send</But>
                         </p>
+                        <Recaptcha sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" />
                     </Form>
                 </div>
             </Content>
