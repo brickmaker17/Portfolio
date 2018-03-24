@@ -89,9 +89,9 @@ function About() {
                             <TextBox name="message" placeholder="Your Message" />
                         </p>
                         <p>
+                            <Recaptcha sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" />
                             <But type="submit">Send</But>
                         </p>
-                        <Recaptcha sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" />
                     </Form>
                 </div>
             </Content>
