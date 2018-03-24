@@ -88,7 +88,6 @@ function About() {
                         <p>
                             <TextBox name="message" placeholder="Your Message" />
                         </p>
-                        <div netlify-recaptcha />
                         <p>
                             {/* <Recaptcha sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" /> */}
                             <But type="submit">Send</But>
