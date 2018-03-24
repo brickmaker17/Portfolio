@@ -90,7 +90,7 @@ function About() {
                         </p>
                         <p>
                             {/* <Recaptcha sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" /> */}
-                            <div className="g-recaptcha" data-sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" />
+                            {/* <div className="g-recaptcha" data-sitekey="6Lf9gk4UAAAAAJ2WtyfidBZ-2YPS6M9cPZntF5MK" /> */}
 
                             <But type="submit">Send</But>
                         </p>
